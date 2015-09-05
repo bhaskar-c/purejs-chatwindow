@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS chatbox attempt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="yack" class="yack-body">
+        <span id="area-to-be-clicked"><a class="yack-title" href="javascript:void(0)"><span id="yack-title-text">Chat with Sales Rep</span></a></span>
+        <div id="yack-content" style="overflow:hidden;">
+            <form>
+                <div id="chat-so-far" style="overflow-y: scroll; height:300px;"></div>
+                <input id="yack-text" type="text"/>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var currentHeight = -300;
+        var maxHeight = 0;
+        var yackBody = document.getElementById("yack");
+        var chatboxopen = false;
+        document.getElementById('area-to-be-clicked').addEventListener('click', function() {
+            if(chatboxopen) {decrementHeight();}
+            else {incrementHeight();}
+            
+                
+        });
+                
+        function incrementHeight() {
+            currentHeight  = currentHeight+10;
+            console.log(currentHeight);
+            yackBody.style.bottom = currentHeight+"px";
+            if (currentHeight < maxHeight) {
+                setTimeout(incrementHeight, 5);
+            }
+            chatboxopen = true;
+        }
+
+        function decrementHeight() {
+            currentHeight  = currentHeight-10;
+            console.log(currentHeight);
+            yackBody.style.bottom = currentHeight+"px";
+            if (currentHeight > -300) {
+                setTimeout(decrementHeight, 5);
+            }
+            chatboxopen = false;
+        }
+
+        
+    </script>
+
+
+
+
+
+
+</body>
+</html>
