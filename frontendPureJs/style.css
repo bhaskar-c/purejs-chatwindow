@@ -1,0 +1,121 @@
+#yack, #yack * {
+	*zoom: 1;
+}
+
+
+#yack{
+		position: fixed;
+	z-index: 100;
+	bottom: -300px;
+	right: 10px;
+    border-radius:3px;
+
+}
+.yack-body {
+
+}
+yack-title
+.loggedout-follow-typekit {
+	margin-right: 4.5em;
+	position: fixed;
+	z-index: 100;
+	bottom: -300px;
+	right: 10px;
+}
+
+#yack a.yack-title {
+	display: block;
+	overflow: hidden;
+	padding: 0 10px 0 8px;
+	float: right;
+	text-decoration: none !important;
+	line-height: 28px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #CCC;
+	letter-spacing: normal;
+	border: 0;
+	background-color: #324155;
+	box-shadow: 0 -1px 5px rgba(0,0,0,0.20);
+	outline-style: none;
+	outline-width: 0;
+}
+
+#yack a.yack-title {
+	border-radius: 2px 2px 0 0;
+}
+
+#yack a.yack-title span {
+	padding-right: 6px;
+}
+
+
+#yack a.yack-title span:before{
+   font-family: FontAwesome;
+   content:  "\f0e6"; /*"\f095";*/
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
+
+#yack a:hover span, #yack a.yack-title.open span {
+	color: #ffffff !important;
+	background-position: left -117px;
+}
+
+#yack a.yack-title.open {
+	background: #324155;
+}
+
+#yack-content {
+	background: #324155;
+	color: #fff;
+	padding: 15px;
+	width: 300px;
+	margin-top: 27px;
+	border-radius: 2px 0 0 0;
+	*float: right;
+	*margin-right: -68px;
+}
+
+div#yack-content.open {
+	box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+#yack-content div {
+	overflow: hidden;
+}
+
+
+#yack-content.open {
+	display: block;
+}
+
+input[type="text"], textarea {
+    border: 1px solid #ccc;
+    border-radius:3px;
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	padding-left: 3px;
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 98%;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+#chat-so-far {
+    background:#fff;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius:3px;
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	padding-left: 3px;
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 98%;
+    max-height:250px;
+
+
+}
