@@ -1,0 +1,33 @@
+<!--http://stackoverflow.com/a/13317681/2348704 -->
+
+<style>
+#content {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#scrollable {
+   height: 150px;   
+   width: 240px; /*this simply hides the scrollbar by adding another 40px margin for the scrollbar*/
+   overflow-y: scroll;    
+}
+#txt {
+    width: 200px;
+}
+
+</style>
+<div id="content">
+    <div id="scrollable">
+        <div id="txt">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+
+        . Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+
+        . Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</div>
+<form>
+    <input type="text" ><input type="button" value="go">
