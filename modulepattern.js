@@ -11,13 +11,17 @@ var achtu = (function(d) {
     }
 
     var addChatDiv = function() {
-        var chatHtml = '<div id="yack""> Hola</div>';
-        $achtuj( "body" ).append( chatHtml );
+        //var chatHtml = '<div id="yack""> Hola</div>';
+        //$achtuj( "body" ).append( chatHtml );
+        $achtuj.get("http://peopleforchange.in/cor/chatwindow.htm", function (data) {
+                    $achtuj("body").append(data);
+                });
+
     }
 
     var addStyleSheet = function() {
-        var chatCSS = '<style type="text/css">#yack{height:50px; background:#729abc;}</style>';
-        $achtuj('head').append(chatCSS);
+        $achtuj('head').append('<link rel="stylesheet" href="http://peopleforchange.in/cor/style.css" \
+            type="text/css" />');
         
     }
 
